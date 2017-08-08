@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "BTC price",
+  "version": "1.0.0",
+  "description": "BTC price check",
+  "background": {
+    "page": "popup.html"
+  },
+  "browser_action": {
+    "name": "Show BTC price",
+    "icons": ["ico.png"],
+    "default_icon": "ico.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-3.2.1.min.js", "popup.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
