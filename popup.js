@@ -18,7 +18,7 @@ $("#account-input-btn").on('click', () => {
         return;
     }
 })
-updateInfo()
+
 $('#update').on('click', () => {
     updateInfo(updateInfoOnScreen);
 });
